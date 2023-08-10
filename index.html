@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PhotoColors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+  <div class="imgWrapper">
+    <input type="file" class="imgInput" id="imageInput">
+    <label for="imageInput" class="custom-file-upload">Upload Image</label>
+
+    <div class="canvas-container">
+      <canvas id="myCanvas"></canvas>
+    </div>
+  </div>
+  <div class="color-info">
+    <div class="color-sample"></div>
+    <div class="color-values">
+      <p class="color-type">RGBA</p>
+      <p class="color-textRGBA copyable"></p>
+    </div>
+    <div class="color-values">
+      <p class="color-type">HEX</p>
+      <p class="color-textHEX copyable"></p>
+    </div>
+  </div>
+  <p id="colorTextRGBA"></p>
+  <p id="colorTextHEX"></p>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
